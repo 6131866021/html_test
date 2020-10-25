@@ -1,4 +1,3 @@
-<h></h>
 
 /* // Global variable
 
