@@ -1,30 +1,33 @@
 body {
-    background-color: black;
+    padding: 10px;
 }
 
 .form {
-    background-color: antiquewhite;
     font-size: 20px;
-    color: navy;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
+    text-align: justify;
 }
 
-.choice {
-    background-color: antiquewhite;
-    font-size: 20px;
-    color:black;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+.html {
+    background-color: black;
 }
-/*
+
+.ans {
+    left: 300px;
+}
+
+input[type=text] {
+    position: fixed;
+    padding: 2px 5px;
+    background-color: cornsilk;
+    margin: 5px;
+    border: 2px;
+    left: 100px;
+}
+
 input[type=submit] {
-    background-color: olivedrab;
-    color: olivedrab;
-    padding: 30px 50px;
-    margin: 8px 0;
     width: 100%;
-    border: none;
-    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    background-color: cadetblue;
+    padding: 10px 200px;
 }
-*/
