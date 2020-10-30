@@ -9,15 +9,24 @@
 
     <body>
         <div class="tab">
-            <img src="com.png" style="width: 4%; padding-left: 10px;">
-            <button class="tablinks" id="Contact" onclick="openCity(event,'Contact')">Contact</button>
-            <button class="tablinks" id="About" onclick="openCity(event,'About')">About</button>
-            <button class="tablinks" id="Home" onclick="openCity(event,'Home')">Home</button>
-        </div>
-        <div class="tabcontent" id="Home">
-            <p>Welcome to my website</p>
+
+        <!-- Tab Links -->
+            <img src="com.png" style="width: 3%; padding-left: 10px;">
+            <button class="tablinks" onclick="openCity(event,'Contact')">Contact</button>
+            <button class="tablinks" onclick="openCity(event,'About')">About</button>
+            <button class="tablinks" id="defaultOpen" onclick="openCity(event,'Home')">Home</button>
         </div>
 
+        <!-- Tab Content -->
+        <div id="Home" class="tabcontent">
+            <p>Welcome to my website</p>
+        </div>
+        <div id="About" class="tabcontent">
+            <p>About You</p>
+        </div>
+        <div id="Contact" class="tabcontent">
+            <p>Love Fernfy</p>
+        </div>
     </body>
 
     <script>
@@ -38,5 +47,5 @@
             // Get the element with id="defaultOpen" and click on it
             document.getElementById("defaultOpen").click();
     </script>
-    
+
 </html>
