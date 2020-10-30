@@ -1,11 +1,9 @@
 .tab {
     overflow: hidden;
-    font-family: monospace;
-    border-bottom: 1px solid #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: transparent white;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
     font-family: inherit;
@@ -13,7 +11,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px 20px;
     transition: 0.3s;
 }
@@ -30,11 +28,17 @@
 }
 
 .tabcontent {
-    font-size: 20px;
-    display: none;
+    font-size: 15px;
     padding: 6px 12px;
     border-bottom: 1px solid #cccccc;
     border-top: none;
     text-align: center;
-    height: 650px;
+    height: 620px;
+}
+
+footer {
+    background-color: #cccccc;
+    position: absolute;
+    height: 50px;
+    width: 1400px;
 }

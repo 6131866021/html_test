@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Google Page</title>
+        <link rel="stylesheet" href="google.css"/>
+    </head>
+
+    <body>
+        <div class="tab">
+
+        <!-- Tab Links -->
+            <button class="tablinks" onclick="open(event,'About')">About</button>
+            <button class="tablinks" onclick="open(event,'Store')">Store</button>
+            <button style="float: right; position: relative;" class="tablinks" onclick="open(event,'Store')"><img src="grid.png" style="width: 30%;"></button>
+            <button style="float: right;" class="tablinks" onclick="open(event,'Store')">Images</button>
+            <button style="float: right;" class="tablinks" onclick="open(event,'Store')">Gmail</button>
+        </div>
+
+        <div class="tabcontent">
+            <img src="google.png" alt="google logo" style="align-content: center; width: 20%;"><br><br>
+            <input type="text" name="google search" id="search" style="align-content: center; width: 500px; height: 50px; border: 1px solid black;"> <br><br><br>
+            <button style="align-content: center; border: 1px solid black; background-color: #cccccc;" class="tablinks"">Google Search</button>
+            <button style="align-content: center; border: 1px solid black; background-color: #cccccc;" class="tablinks"">I'm Feeling Lucky</button>
+        </div>
+    </body>
+ 
+    
+    <footer>
+        <div class="tab">
+
+            <!-- Tab Links -->
+                <button class="tablinks" onclick="open(event,'About')">Advertising</button>
+                <button class="tablinks" onclick="open(event,'Store')">Business</button>
+                <button style="float: right;" class="tablinks" onclick="open(event,'Store')">Privacy</button>
+                <button style="float: right;" class="tablinks" onclick="open(event,'Store')">Settings</button>
+            </div>
+    </footer>
+
+</html>
+
