@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JS Documentation Page</title>
+        <link rel="stylesheet" href="main2.css"/>
+    </head>
+
+
+    <body>
+
+        <h2 style="text-align: center;">Build a Technical Documentation</h2>
+  
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Intro')" id="defaultOpen"><h4>JS Documentation</h4></button>
+            <button class="tablinks" onclick="openCity(event, 'Intro')">Introduction</button>
+            <button class="tablinks" onclick="openCity(event, 'What')">What you should already know</button>
+            <button class="tablinks" onclick="openCity(event, 'Java')">JavaScript and Java</button>
+        </div>
+        
+        <div id="Intro" class="tabcontent">
+            <h2>Introduction</h2>
+            <p>JavaScript is a cross-platform, object-oriented scripting language ...</p>
+        </div>
+        
+        <div id="What" class="tabcontent">
+            <h2>What you should already know</h2>
+            <p>JavaScript is a cross-platform, object-oriented scripting language ...</p>
+        </div>
+        
+        <div id="Java" class="tabcontent">
+            <h3>JavaScript and Java</h3>
+            <p>JavaScript is a cross-platform, object-oriented scripting language ...</p>
+        </div>
+        
+        <script>
+            function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+        
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+           
+    </body>
+</html> 
+        
