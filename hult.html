@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Foodigious</title>
+        <link rel="stylesheet" href="hult.css"/>
+    </head>
+
+    <body>
+        <div class="tab">
+
+        <!-- Tab Links -->
+            <img src="hult.png" style="width: 5%; padding-left: 10px;">
+            <button class="tablinks" onclick="openCity(event,'About')">FAQ</button>
+            <button class="tablinks" onclick="openCity(event,'About')">Learn</button>
+            <button class="tablinks" onclick="openCity(event,'About')">Products</button>
+            <button class="tablinks" onclick="openCity(event,'About')">About</button>
+            <button class="tablinks" id="defaultOpen" onclick="openCity(event,'Home')">Home</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="Home" class="tabcontent">
+            <p>Welcome to Foodigious</p>
+            <img src="smart.jpg" style="padding-top: 10px;">
+        </div>
+        <div id="About" class="tabcontent">
+            <p>About You</p>
+        </div>
+        <div id="Contact" class="tabcontent">
+            <p>Haha</p>
+        </div>
+    </body>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+        
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+    </script>
+
+</html>
